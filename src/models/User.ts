@@ -32,27 +32,27 @@ const userSchema = new mongoose.Schema({
     },
     age: {
         type: Number,
-        required: true,
+        required: false,
     },
     weight: {
         type: Number,
-        required: true,
+        required: false,
     },
     height: {
         type: Number,
-        required: true,
+        required: false,
     },
     gender: {
         type: String,
-        required: true,
+        required: false,
     },  
     activityLevel: {
         type: String,
-        required: true,
+        required: false,
     },
     goal: {
         type: String,
-        required: true,
+        required: false,
     },
     lastActivity: {
         type: Date,
