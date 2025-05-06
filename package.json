@@ -16,7 +16,8 @@
     "dotenv-safe": "^9.1.0",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.14.1"
+    "mongoose": "^8.14.1",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.26.0",
@@ -26,6 +27,7 @@
     "@types/express": "^5.0.1",
     "@types/jsonwebtoken": "^9.0.9",
     "@types/mongoose": "^5.11.96",
+    "@types/yup": "^0.29.14",
     "eslint": "^9.26.0",
     "globals": "^16.0.0",
     "nodemon": "^3.1.10",

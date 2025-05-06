@@ -1,3 +1,4 @@
+import { handleError } from "../errors/handleError";
 import User from "../models/User";
 import Express from "express"
 
@@ -14,7 +15,7 @@ export const createUser = async (req: Express.Request, res: Express.Response) =>
         res.json(createdUser).status(201)
     }
     catch (err) {
-        console.error(err, 500)
+        handleError(err, res)
     }
 }
 
@@ -24,6 +25,6 @@ export const getUsers = async (_: Express.Request, res: Express.Response) => {
 
         res.json(users).status(200)
     } catch (err) {
-        console.error(err, 500)
+        handleError(err, res)
     }
 }

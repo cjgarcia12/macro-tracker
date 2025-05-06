@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+// model typing
 export type UserType = {
     _id?: string
     username: string
@@ -15,6 +16,7 @@ export type UserType = {
     lastActivity?: Date
 }
 
+// model schema
 const userSchema = new mongoose.Schema({
     username: {
         type: String,
@@ -26,7 +28,7 @@ const userSchema = new mongoose.Schema({
         required: true,
         unique: true,
     },
-    passwordHash: {
+    password: {
         type: String,
         required: true,
     },
